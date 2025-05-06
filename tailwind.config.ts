@@ -1,3 +1,4 @@
+
 import type { Config } from "tailwindcss";
 
 export default {
@@ -61,6 +62,14 @@ export default {
 					'accent-foreground': 'hsl(var(--sidebar-accent-foreground))',
 					border: 'hsl(var(--sidebar-border))',
 					ring: 'hsl(var(--sidebar-ring))'
+				},
+				zenith: {
+					blue: "#0EA5E9",
+					orange: "#F97316",
+					navy: "#1E3A8A",
+					gray: "#F3F4F6",
+					yellow: "#FACC15",
+					red: "#EF4444"
 				}
 			},
 			borderRadius: {
@@ -84,11 +93,53 @@ export default {
 					to: {
 						height: '0'
 					}
+				},
+				'pulse-glow': {
+					'0%, 100%': {
+						opacity: '1',
+						transform: 'scale(1)'
+					},
+					'50%': {
+						opacity: '0.8',
+						transform: 'scale(1.05)'
+					}
+				},
+				'float': {
+					'0%, 100%': {
+						transform: 'translateY(0)'
+					},
+					'50%': {
+						transform: 'translateY(-10px)'
+					}
+				},
+				'wave': {
+					'0%': { transform: 'translateX(0)' },
+					'100%': { transform: 'translateX(-100%)' }
+				},
+				'heartbeat': {
+					'0%': { transform: 'scale(1)' },
+					'14%': { transform: 'scale(1.3)' },
+					'28%': { transform: 'scale(1)' },
+					'42%': { transform: 'scale(1.3)' },
+					'70%': { transform: 'scale(1)' }
 				}
 			},
 			animation: {
 				'accordion-down': 'accordion-down 0.2s ease-out',
-				'accordion-up': 'accordion-up 0.2s ease-out'
+				'accordion-up': 'accordion-up 0.2s ease-out',
+				'pulse-glow': 'pulse-glow 2s infinite ease-in-out',
+				'float': 'float 3s infinite ease-in-out',
+				'wave': 'wave 15s linear infinite',
+				'heartbeat': 'heartbeat 2s infinite'
+			},
+			fontFamily: {
+				montserrat: ['Montserrat', 'sans-serif'],
+				inter: ['Inter', 'sans-serif']
+			},
+			backgroundImage: {
+				'gradient-radial': 'radial-gradient(var(--tw-gradient-stops))',
+				'energy-waves': 'url("/energy-waves.svg")',
+				'zenith-pattern': 'url("/zenith-pattern.svg")'
 			}
 		}
 	},
