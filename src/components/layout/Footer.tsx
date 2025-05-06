@@ -33,9 +33,9 @@ const Footer = () => {
           <div>
             <h3 className="text-lg font-bold mb-4">Products</h3>
             <ul className="space-y-2">
-              <li><Link to="/products/proton" className="text-gray-300 hover:text-zenith-orange transition-colors">Proton Series</Link></li>
-              <li><Link to="/products/neutron" className="text-gray-300 hover:text-zenith-orange transition-colors">Neutron Series</Link></li>
-              <li><Link to="/products/electron" className="text-gray-300 hover:text-zenith-orange transition-colors">Electron Series</Link></li>
+              <li><Link to="/products" className="text-gray-300 hover:text-zenith-orange transition-colors">Proton Series</Link></li>
+              <li><Link to="/products" className="text-gray-300 hover:text-zenith-orange transition-colors">Neutron Series</Link></li>
+              <li><Link to="/products" className="text-gray-300 hover:text-zenith-orange transition-colors">Electron Series</Link></li>
             </ul>
           </div>
           
@@ -52,9 +52,9 @@ const Footer = () => {
         <div className="mt-12 pt-4 border-t border-gray-700 flex flex-col md:flex-row justify-between items-center">
           <p className="text-gray-400 text-sm">© 2025 Zenith Zap. All rights reserved.</p>
           <div className="flex gap-4 mt-4 md:mt-0">
-            <Link to="/terms" className="text-gray-400 text-sm hover:text-white transition-colors">Terms</Link>
-            <Link to="/privacy" className="text-gray-400 text-sm hover:text-white transition-colors">Privacy</Link>
-            <Link to="/cookies" className="text-gray-400 text-sm hover:text-white transition-colors">Cookies</Link>
+            <Link to="/about" className="text-gray-400 text-sm hover:text-white transition-colors">Terms</Link>
+            <Link to="/about" className="text-gray-400 text-sm hover:text-white transition-colors">Privacy</Link>
+            <Link to="/about" className="text-gray-400 text-sm hover:text-white transition-colors">Cookies</Link>
           </div>
         </div>
       </div>
